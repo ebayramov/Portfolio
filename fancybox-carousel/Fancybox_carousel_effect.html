@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+    <style>
+        button.sil {
+            position: absolute;
+            transform: translate(0, -10px);
+            left: 98%;
+            top: 0px;
+            z-index: 3;
+            border-radius: 50%;
+            height: 25px;
+            width: 25px;
+            color: white;
+            background-color: red;
+            font-size: 8px;
+            font-weight: bold;
+            border: 1px solid white;
+        }
+
+        button.sag {
+            position: absolute;
+            left: 100%;
+            top: 50%;
+            z-index: 3;
+            height: 50px;
+            width: 50px;
+            font-size: 40px;
+            transform: translate(-60px, 0);
+            background-color: transparent;
+            color: white;
+            border: none;
+
+        }
+
+        button.sol {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            z-index: 3;
+            height: 50px;
+            width: 50px;
+            font-size: 40px;
+            transform: translate(10px, 0);
+            background-color: transparent;
+            color: white;
+            border: none;
+        }
+
+        button.sag:hover,
+        button.sol:hover {
+            font-size: 50px;
+            top: 47%;
+        }
+
+        .kicik {
+            width: 140px;
+            height: 80px;
+        }
+
+        .boyuk1 {
+            height: 100%;
+            width: 100%;
+            border: 10px solid white;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            box-sizing: border-box;
+        }
+
+        .boyuk2 {
+            width: 60vw;
+            height: 70vh;
+            margin: auto;
+            position: relative;
+            box-sizing: border-box;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>HEADER</h1>
+    <div class="parent">
+        <div class="sekil">
+            <img src="img/1.jpg" alt="sekil1" id="img1">
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae deleniti earum voluptates dolorem, alias
+            fuga odit eius repellat in suscipit rem itaque optio quia tempore eos consequatur sapiente repudiandae
+            numquam!
+            Commodi incidunt distinctio dignissimos numquam libero porro sunt officia sapiente. Officia, odit
+            accusantium? Odit, illum. Odit quidem animi tenetur nisi eveniet quis accusamus neque soluta, fugit in
+            perferendis sint laborum.
+            Debitis, ducimus ipsa animi quas adipisci eos, doloribus accusamus suscipit nobis ipsum porro cum dolores
+            explicabo saepe quae deserunt maxime? Unde labore repellat animi ut voluptatibus, temporibus excepturi eos
+            tempora?
+            Autem vitae eveniet est mollitia molestiae ea itaque aspernatur voluptatem. Culpa, assumenda odit omnis
+            earum laborum quidem mollitia laudantium molestiae at eveniet eius, autem quia doloribus est vel minima
+            ipsum.
+            Reiciendis corporis obcaecati ad labore blanditiis adipisci dolor quos illo consectetur, ea dolorum eveniet
+            temporibus officiis itaque, mollitia, minima tempore cum alias repellat repellendus debitis! Consectetur
+            accusantium mollitia cum laboriosam.</p>
+    </div>
+    <hr>
+    <div class="parent">
+        <div class="sekil">
+            <img src="img/2.jpg" alt="sekil2" id="img2">
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae deleniti earum voluptates dolorem, alias
+            fuga odit eius repellat in suscipit rem itaque optio quia tempore eos consequatur sapiente repudiandae
+            numquam!
+            Commodi incidunt distinctio dignissimos numquam libero porro sunt officia sapiente. Officia, odit
+            accusantium? Odit, illum. Odit quidem animi tenetur nisi eveniet quis accusamus neque soluta, fugit in
+            perferendis sint laborum.
+            Debitis, ducimus ipsa animi quas adipisci eos, doloribus accusamus suscipit nobis ipsum porro cum dolores
+            explicabo saepe quae deserunt maxime? Unde labore repellat animi ut voluptatibus, temporibus excepturi eos
+            tempora?
+            Autem vitae eveniet est mollitia molestiae ea itaque aspernatur voluptatem. Culpa, assumenda odit omnis
+            earum laborum quidem mollitia laudantium molestiae at eveniet eius, autem quia doloribus est vel minima
+            ipsum.
+            Reiciendis corporis obcaecati ad labore blanditiis adipisci dolor quos illo consectetur, ea dolorum eveniet
+            temporibus officiis itaque, mollitia, minima tempore cum alias repellat repellendus debitis! Consectetur
+            accusantium mollitia cum laboriosam.</p>
+    </div>
+    <hr>
+    <div class="parent">
+        <div class="sekil">
+            <img src="img/3.jpg" alt="sekil3" id="img3">
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae deleniti earum voluptates dolorem, alias
+            fuga odit eius repellat in suscipit rem itaque optio quia tempore eos consequatur sapiente repudiandae
+            numquam!
+            Commodi incidunt distinctio dignissimos numquam libero porro sunt officia sapiente. Officia, odit
+            accusantium? Odit, illum. Odit quidem animi tenetur nisi eveniet quis accusamus neque soluta, fugit in
+            perferendis sint laborum.
+            Debitis, ducimus ipsa animi quas adipisci eos, doloribus accusamus suscipit nobis ipsum porro cum dolores
+            explicabo saepe quae deserunt maxime? Unde labore repellat animi ut voluptatibus, temporibus excepturi eos
+            tempora?
+            Autem vitae eveniet est mollitia molestiae ea itaque aspernatur voluptatem. Culpa, assumenda odit omnis
+            earum laborum quidem mollitia laudantium molestiae at eveniet eius, autem quia doloribus est vel minima
+            ipsum.
+            Reiciendis corporis obcaecati ad labore blanditiis adipisci dolor quos illo consectetur, ea dolorum eveniet
+            temporibus officiis itaque, mollitia, minima tempore cum alias repellat repellendus debitis! Consectetur
+            accusantium mollitia cum laboriosam.</p>
+    </div>
+    <hr>
+    <div class="parent">
+        <div class="sekil">
+            <img src="img/4.jpg" alt="sekil4" id="img4">
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae deleniti earum voluptates dolorem, alias
+            fuga odit eius repellat in suscipit rem itaque optio quia tempore eos consequatur sapiente repudiandae
+            numquam!
+            Commodi incidunt distinctio dignissimos numquam libero porro sunt officia sapiente. Officia, odit
+            accusantium? Odit, illum. Odit quidem animi tenetur nisi eveniet quis accusamus neque soluta, fugit in
+            perferendis sint laborum.
+            Debitis, ducimus ipsa animi quas adipisci eos, doloribus accusamus suscipit nobis ipsum porro cum dolores
+            explicabo saepe quae deserunt maxime? Unde labore repellat animi ut voluptatibus, temporibus excepturi eos
+            tempora?
+            Autem vitae eveniet est mollitia molestiae ea itaque aspernatur voluptatem. Culpa, assumenda odit omnis
+            earum laborum quidem mollitia laudantium molestiae at eveniet eius, autem quia doloribus est vel minima
+            ipsum.
+            Reiciendis corporis obcaecati ad labore blanditiis adipisci dolor quos illo consectetur, ea dolorum eveniet
+            temporibus officiis itaque, mollitia, minima tempore cum alias repellat repellendus debitis! Consectetur
+            accusantium mollitia cum laboriosam.</p>
+    </div>
+
+    <script>
+
+        $(document).ready(function () {           
+            let count;
+            let currentImageIndex;
+            let imgSrc;
+            let numberMatch;
+
+            function updateImageIndex() {
+                switch (count) {
+                    case 1:
+                        currentImageIndex++;
+                        break;
+                    case 2:
+                        currentImageIndex--;
+                        break;
+                    case 3:
+                        currentImageIndex = 1;
+                        break;
+                    case 4:
+                        currentImageIndex = $("img.kicik").length;
+                        break;
+                }
+                return currentImageIndex;
+            }
+
+            $("h1").css({ textAlign: `center` })
+
+            $("img")
+                .addClass("kicik")
+                .click(function () {
+                    $(this).addClass("boyuk1")
+                    $(this).closest("div.sekil").addClass("boyuk2")
+                        .append(`<button class="sil">&#9587;</button>`)
+                        .append(`<button class="sag">&#9755;</button>`)
+                        .append(`<button class="sol">&#9754;</button>`)
+
+                    $("button.sil").click(function () {
+                        let currentImage = $(this).siblings('img.kicik');
+                        let index = $("img.kicik").index(currentImage);
+                        $(this).siblings('img').attr("src", `img/${index + 1}.jpg`).removeClass("boyuk1")
+                        $(this).closest('div.sekil').removeClass("boyuk2").find("button.sag, button.sol").remove();
+                        $(this).remove()
+                    })
+
+                    $("button.sag").click(function () {
+                        imgSrc = $(this).siblings('img.kicik').attr("src");
+                        numberMatch = imgSrc.match(/\d+/);
+                        currentImageIndex = parseInt(numberMatch[0], 10)
+                        if (currentImageIndex < $("img.kicik").length) {
+                            count = 1
+                            $(this).siblings("img.kicik").attr("src", `img/${currentImageIndex + 1}.jpg`);
+                            updateImageIndex()
+                        } else {
+                            count = 3
+                            updateImageIndex()
+                            $(this).siblings("img.kicik").attr("src", `img/${currentImageIndex}.jpg`);
+                        }
+                    })
+
+                    $("button.sol").click(function () {
+                        imgSrc = $(this).siblings('img.kicik').attr("src");
+                        numberMatch = imgSrc.match(/\d+/);
+                        currentImageIndex = parseInt(numberMatch[0], 10)
+
+                        if (currentImageIndex > 1) {
+                            count = 2
+                            $(this).siblings("img.kicik").attr("src", `img/${currentImageIndex - 1}.jpg`);
+                            updateImageIndex()
+                        } else {
+                            count = 4
+                            updateImageIndex();
+                            $(this).siblings("img.kicik").attr("src", `img/${currentImageIndex}.jpg`);
+                        }
+                    })
+
+                })
+
+            $("img:odd").css(
+                {
+                    marginLeft: `20px`,
+                    float: `right`
+                })
+            $("img:even").css(
+                {
+                    marginRight: `20px`,
+                    float: `left`
+                })
+
+
+
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>
