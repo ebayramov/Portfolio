@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <style>
+        div {
+            margin: auto;
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            width: auto;
+        }
+
+        th {
+            background-color: gray;
+            color: white;
+            text-align: center;
+            border: 1px solid black;
+
+        }
+
+        table td {
+            border: 1px solid black;
+            min-height: 25px;
+        }
+
+        .sol {
+            display: flex;
+            justify-content: space-between;
+            flex: 1;
+        }
+
+        table {
+            border-spacing: 0;
+            min-width: 400px;
+            margin: auto;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="date" id="tarix">
+        <input type="text" id="is" placeholder="work to do">
+        <button>Add</button>
+    </div>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>To Do</th>
+        </tr>
+    </table>
+
+    <script>
+        $(document).ready(function () {
+
+            $("div").children("button").click(function () {
+                $("table").append(`<tr><td>${$('#tarix').val()}</td><td class="sol"> ${$('#is').val()} <button class="delete">Remove</button> </td></tr>`)
+                $('#tarix').val('')
+                $('#is').val('')
+            })           
+
+            $('table').on('click', 'button.delete', function () {
+                $(this).closest('tr').remove();
+            });
+
+        });
+
+
+    </script>
+</body>
+
+</html>
